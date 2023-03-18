@@ -1,6 +1,6 @@
 # Ransomware
 
-#Part 1: Creation of Ransomware
+Part 1: Creation of Ransomware
 
 Creation of a program capable of encrypting directories recursively and acting as ransomware. The 
 program will create a random key and will mail this key to an external account. Since symmetric
@@ -10,14 +10,13 @@ py2exe to hide it as an innocuous executable.
 
 Programming Language: Python.
 
-
-#Part 2: Delivery of Ransomware
+Part 2: Delivery of Ransomware
 Create a delivery system for this ransomware, developed in part 1, we will create a fake Gmail account 
 and send an innocuous email attachment or as an executable, renamed as a genuine software 
 installer. The website will host the ransomware program as a popular game installer. Once the user 
 downloads the game and runs it, the program will infect the user machine.
 
-#Part 3: Ransomware Detection
+Part 3: Ransomware Detection
 Detection of any suspicious activity in the file system by checking for signatures and raising an alarm. 
 The detection will be done through setting up of perimeter/honeytrap files. Special files, called 
 perimeter files, will be created in all directories. If a ransomware lists files in any directory, the first file 
@@ -28,7 +27,7 @@ which has a list of all these files. The prevention and recovery are then initia
 stage will run as a monitor in the system. If these files are changed/encrypted, it implies that there is 
 virus active on the system. The file monitoring will be done in Python using OS and watchdog libraries.
 
-#Part 4: Attack Prevention/Disruption
+Part 4: Attack Prevention/Disruption
 This part includes the following steps to shutting down the system network to avoid spreading of the ransomware further:
 
 1. Kill all active processes (including the ransomware)
